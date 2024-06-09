@@ -1,0 +1,33 @@
+create table employeeErrors(
+EmployeeID varchar(50),
+Firstname varchar(50),
+lastname varchar(50)
+)
+
+insert into employeeErrors values
+(
+'1001 ','Jimbo' ,'Halbert'
+),
+(' 1002', 'Pamela','Beasely'),
+('1005','Toby','Flenderson - Fired')
+
+select * 
+from employeeErrors
+
+--TRIMS
+
+select employeeID, TRIM(employeeID) as IDTRIM
+from employeeErrors
+
+
+
+select employeeID,LTRIM(employeeID) as IDTRIM
+from employeeErrors
+
+select employeeID,RTRIM(employeeID) as IDTRIM
+from employeeErrors
+
+
+--using replace
+
+

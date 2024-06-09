@@ -1,0 +1,16 @@
+
+select Gender,Count(Gender) genderCount
+from Employedemographics
+group by Gender
+
+
+
+select *
+from Employedemographics
+ORDER BY Age desc, Gender desc
+
+
+
+select *
+from Employedemographics
+ORDER BY 4 desc, 5 desc

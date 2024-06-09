@@ -1,0 +1,24 @@
+select *
+from Employedemographics
+
+update Employedemographics
+set Age = 31
+where Firstname = 'jim' and LastName = 'Halpert'
+
+
+select *
+from Employedemographics
+
+update Employedemographics
+set Age = 31,Gender = 'Female'
+where EmployeeID=10025
+
+
+
+select *
+from Employedemographics
+
+delete from Employedemographics
+where EmployeeID = 1009
+
+

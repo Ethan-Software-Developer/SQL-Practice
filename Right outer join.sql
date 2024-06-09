@@ -1,0 +1,40 @@
+create table #temp_employee(
+EmployeeID int,
+JobTitle varchar(100),
+Salary int
+)
+
+select * 
+from 
+#temp_employee
+
+
+
+insert into #temp_employee values(
+1001,'HR',45000
+
+)
+
+insert into #temp_employee
+select * 
+from EmployeeSalary
+
+
+create table #Temp_Employee2(
+JobTitle varchar(50),
+EmployeesPerJob int,
+AvgAge int,
+AvgSalary int
+)
+
+
+insert into #Temp_Employee2
+select JobTitle, Count(Jobtitle),AVG(Age),AVG(salary)
+from Employedemographics emp
+join EmployeeSalary sal
+	on emp.EmployeeID = sal.EmployeeID
+group by JobTitle
+
+select *
+from #Temp_Employee2
+

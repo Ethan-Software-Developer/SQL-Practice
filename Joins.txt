@@ -1,0 +1,10 @@
+select * 
+from SQL_Tutorial.dbo.Employedemographics
+
+select * 
+from SQL_Tutorial.dbo.EmployeeSalary
+
+select * 
+From SQL_Tutorial.dbo.Employedemographics
+Right outer join SQL_Tutorial.dbo.EmployeeSalary
+	ON Employedemographics.EmployeeID = EmployeeSalary.EmployeeID

@@ -1,0 +1,27 @@
+select Firstname,LastName
+from Employedemographics
+
+select *
+from Employedemographics
+
+
+select Top 5 *
+from Employedemographics
+
+
+select Distinct(EmployeeID)//Finds only that, or only one of each
+from Employedemographics
+
+
+select Count(LastName) as lastnamecount
+from Employedemographics//the as give's it a nickname
+
+
+select max(Salary)
+from EmployeeSalary
+
+select min(Salary)
+from EmployeeSalary
+
+select avg(Salary)
+from EmployeeSalary

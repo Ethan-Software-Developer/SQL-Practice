@@ -1,0 +1,51 @@
+
+select * 
+from Employedemographics
+
+where Firstname = 'jim'
+
+
+
+select * 
+from Employedemographics
+
+where Firstname != 'jim'
+
+
+
+select * 
+from Employedemographics
+
+where Age >= 30
+
+
+select * 
+from Employedemographics
+
+where Age >= 30 and Gender = 'Male'
+
+
+
+select * 
+from Employedemographics
+
+where Age >= 30 or Gender = 'Male'
+
+
+
+select * 
+from Employedemographics
+
+where LastName like 's%'
+
+
+select * 
+from Employedemographics
+
+where Firstname is not null
+
+
+select * 
+from Employedemographics
+
+where Firstname is  null 
