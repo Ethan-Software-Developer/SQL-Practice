@@ -1,1 +1,1 @@
-I have completed C programming course
+I have completed a SQL Tutorial
